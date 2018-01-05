@@ -1,0 +1,17 @@
+# enable the function keys binding
+bind-key -n S-F12 source ~/.tmux.conf \; display-message "Function-keys: ENABLED"
+
+unbind-key -n F2
+unbind-key -n S-F1
+unbind-key -n S-F2
+
+unbind-key -n F3
+unbind-key -n F4
+unbind-key -n S-F3
+unbind-key -n S-F4
+
+unbind-key -n F6
+unbind-key -n F8
+
+unbind-key -n F7
+unbind-key -n S-F7
