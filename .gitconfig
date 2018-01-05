@@ -1,0 +1,42 @@
+[user]
+        name = Minlin Zhang
+        email = minlin.zhang@hulu.com
+[color]
+        ui = auto
+[color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold
+        old = red bold
+        new = green bold
+        whitespace = red reverse
+[color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
+[core]
+        whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+        ignorecase=false
+        pager = less -x1,5
+        editor = /usr/local/bin/vim
+        excludesfile = ~/.gitignore_global
+[apply]
+        whitespace = fix
+
+[alias]
+        st = status
+        ci = commit
+        cia = commit --amend
+        che = cherry-pick
+        br = branch
+        co = checkout
+        di = diff
+        fe = fetch --all
+        lg = log -p
+        lga = log -p --all
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit
+        lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+        loa = log --graph --decorate --abbrev-commit --all
